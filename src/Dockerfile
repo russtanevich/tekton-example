@@ -1,4 +1,8 @@
-FROM golang:1.16-alpine
+FROM ubuntu:22.04
+
+RUN apt update
+
+RUN apt install -y golang-go && go version
 
 RUN apt install libgeos librdkafka
 
