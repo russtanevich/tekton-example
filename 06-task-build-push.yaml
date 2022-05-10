@@ -17,4 +17,5 @@ spec:
         - /kaniko/executor
         - --dockerfile=Dockerfile
         - --context=/workspace/repo/src
-        - --destination=russtanevich/private:tekton-kaniko-test-1
+        - --destination=russtanevich/private:tekton-kaniko-test-01
+        - --cache=true
