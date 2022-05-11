@@ -11,3 +11,8 @@ spec:
       - name: repo
         resourceRef:
           name: russtanevich-tekton-example
+
+  workspaces:
+    - name: cached-dir
+      persistentVolumeClaim:
+        claimName: kaniko-cache-claim
